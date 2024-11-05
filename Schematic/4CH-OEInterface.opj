@@ -1,6 +1,6 @@
 (ExpressProject "4CH-OEInterface"
   (ProjectVersion "19981106")
-  (SoftwareVersion "22.1 P001 (4063652)  [10/6/2022]-[11/01/24]")
+  (SoftwareVersion "22.1 P001 (4063652)  [10/6/2022]-[11/05/24]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -43,7 +43,17 @@
     ("Allegro Setup Part Type Length" "255")
     ("Allegro Netlist Combine Property String" "PCB Footprint")
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
-    ("Allegro Netlist User Defined Property" "FALSE"))
+    ("Allegro Netlist User Defined Property" "FALSE")
+    ("Allegro Backannotation Run Genfeed" "TRUE")
+    ("Allegro Backannotation Board File"
+       "F:\MyTemporary\Github\4CH-OEInterface\PCB\4CHOEI-8.brd")
+    ("Allegro Backannotation Netlist Directory"
+       "F:\MyTemporary\Github\4CH-OEInterface\Schematic\Netlist")
+    ("Allegro Backannotation Output File" "allegro\4CH-OEINTERFACE.swp")
+    ("Allegro Backannotation Update Schematic" "TRUE")
+    ("Allegro Backannotation View Output" "FALSE")
+    ("Allegro Setup Output Warnings" "FALSE")
+    (Backannotation_TAB "0"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\4ch.bom"
@@ -56,7 +66,22 @@
       (DisplayName "pstxprt.dat"))
     (File ".\netlist\pstchip.dat"
       (Type "Report")
-      (DisplayName "pstchip.dat")))
+      (DisplayName "pstchip.dat"))
+    (File ".\netlist\pinview.dat"
+      (Type "Report")
+      (DisplayName "pinView.dat"))
+    (File ".\netlist\netview.dat"
+      (Type "Report")
+      (DisplayName "netView.dat"))
+    (File ".\netlist\funcview.dat"
+      (Type "Report")
+      (DisplayName "funcView.dat"))
+    (File ".\netlist\compview.dat"
+      (Type "Report")
+      (DisplayName "compView.dat"))
+    (File ".\allegro\4ch-oeinterface.swp"
+      (Type "Report")
+      (DisplayName "4CH-OEINTERFACE.swp")))
   (Folder "Referenced Projects")
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles")
@@ -66,7 +91,11 @@
       (Sort User))
     (Folder "Include Files"
       (Sort User)))
-  (Folder "Logs")
+  (Folder "Logs"
+    (File ".\netlist\swp.log"
+      (Type "Log File")
+      (LogFile
+         "F:\MyTemporary\Github\4CH-OEInterface\Schematic\Netlist\swp.log")))
   (PartMRUSelector
     (GND
       (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -129,25 +158,18 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "f:\mytemporary\github\4ch-oeinterface\schematic\4ch-oeinterface.dsn")
-      (Path "Design Resources"
-         "f:\mytemporary\github\4ch-oeinterface\schematic\4ch-oeinterface.dsn"
-         "SCHEMATIC1")
-      (Path "Design Resources"
-         "f:\mytemporary\github\4ch-oeinterface\schematic\4ch-oeinterface.dsn"
-         "Design Cache")
+      (Path "Design Resources" ".\4ch-oeinterface.dsn")
+      (Path "Design Resources" ".\4ch-oeinterface.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\4ch-oeinterface.dsn" "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "f:\mytemporary\github\4ch-oeinterface\schematic\library1.olb")
+      (Path "Design Resources" "Library" ".\library1.olb")
       (Path "Outputs")
-      (Select "Design Resources"
-         "f:\mytemporary\github\4ch-oeinterface\schematic\4ch-oeinterface.dsn"))
+      (Path "Logs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 358"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 384 0 578"))
       (Tab 0)))
   (MPSSessionName "SNIPER")
   (ISPCBBASICLICENSE "false"))
