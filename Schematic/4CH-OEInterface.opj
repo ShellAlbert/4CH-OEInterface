@@ -1,6 +1,6 @@
 (ExpressProject "4CH-OEInterface"
   (ProjectVersion "19981106")
-  (SoftwareVersion "22.1 P001 (4063652)  [10/6/2022]-[11/05/24]")
+  (SoftwareVersion "22.1 P001 (4063652)  [10/6/2022]-[11/06/24]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -164,12 +164,13 @@
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" ".\library1.olb")
       (Path "Outputs")
-      (Path "Logs"))
+      (Path "Logs")
+      (Select "Design Resources" ".\4ch-oeinterface.dsn" "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 384 0 578"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 578"))
       (Tab 0)))
   (MPSSessionName "SNIPER")
   (ISPCBBASICLICENSE "false"))
