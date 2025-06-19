@@ -1,0 +1,19 @@
+M48
+METRIC,TZ
+T01C.2
+T02C.8
+T03C.9
+T04C3.
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : 4CH-OEI-A2-sq-1-4.drl for board F:/3-MyLaptopDIR/4CH-OEInterface_x86/PCB/#Taaaacd13664.tmp ... layers TOP and BOTTOM, Square Drill, Roation 0
+;T02 Holesize 1. = 0.800000 Tolerance = +0.000000/-0.000000 PLATED MM Quantity = 4
+%
+G90
+T02
+X271000Y2068500
+X691000
+Y2933500
+X271000
+M30
